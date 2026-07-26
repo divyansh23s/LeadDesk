@@ -21,9 +21,9 @@ export default function AdminLogin() {
     setIsLoading(true);
 
     try {
-      const response = await axios.post(`${API_URL}/admin/login`, { username, password });
+      const response = await axios.post(`${API_URL}/api/admin/login`, { username, password });
       login(response.data.token);
-      navigate('/admin');
+      navigate('/api/admin');
     } catch (err) {
       setError(err.response?.data?.message || 'Login failed. Please check your credentials.');
     } finally {
