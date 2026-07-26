@@ -46,13 +46,7 @@ The admin portal is secured using **JSON Web Tokens (JWT)** and **bcrypt**.
    - Publish Directory: `dist`
    - Set Environment Variable: `VITE_API_URL` to point to the backend URL.
 
-## Loom Walkthrough Requirement
-*(Since I am an AI, I cannot record a Loom video. Please record your own video following these steps:)*
-1. Go to the public landing page and submit the lead form.
-2. Show the success message.
-3. Navigate to `/admin/login` and sign in.
-4. View the newly created lead in the dashboard.
-5. Change the lead's status from "New" to "Contacted" or "Closed" to demonstrate the update flow.
+
 
 ---
 Built for Digital Heroes Training Task - [digitalheroesco.com](https://digitalheroesco.com)
