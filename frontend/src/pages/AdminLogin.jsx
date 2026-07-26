@@ -5,7 +5,7 @@ import { Lock, Shield, AlertCircle } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import './AdminLogin.css';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+const API_URL = import.meta.env.VITE_API_URL || 'https://leaddesk-zisl.onrender.com';
 
 export default function AdminLogin() {
   const [username, setUsername] = useState('');
