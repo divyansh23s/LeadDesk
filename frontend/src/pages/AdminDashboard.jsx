@@ -4,7 +4,7 @@ import { LogOut, Search, User, Mail, DollarSign, MessageSquare, Clock } from 'lu
 import { useAuth } from '../context/AuthContext';
 import './AdminDashboard.css';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+const API_URL = import.meta.env.VITE_API_URL || 'https://leaddesk-zisl.onrender.com';
 
 export default function AdminDashboard() {
   const [leads, setLeads] = useState([]);
