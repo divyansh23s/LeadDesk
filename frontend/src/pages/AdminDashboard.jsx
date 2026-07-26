@@ -21,7 +21,7 @@ export default function AdminDashboard() {
 
   const fetchLeads = async () => {
     try {
-      const response = await axios.get(`${API_URL}/leads`, {
+      const response = await axios.get(`${API_URL}/api/leads`, {
         headers: { Authorization: `Bearer ${token}` }
       });
       setLeads(response.data);
@@ -38,7 +38,7 @@ export default function AdminDashboard() {
 
   const handleStatusChange = async (id, newStatus) => {
     try {
-      await axios.patch(`${API_URL}/leads/${id}`, 
+      await axios.patch(`${API_URL}/api/leads/${id}`, 
         { status: newStatus },
         { headers: { Authorization: `Bearer ${token}` } }
       );
