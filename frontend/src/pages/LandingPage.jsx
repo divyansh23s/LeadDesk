@@ -39,7 +39,7 @@ export default function LandingPage() {
     setStatus({ type: '', message: '' });
 
     try {
-      await axios.post(`${API_URL}/leads`, formData);
+      await axios.post(`${API_URL}/api/leads`, formData);
       setStatus({ type: 'success', message: 'Thank you! We will be in touch shortly.' });
       setFormData({ name: '', email: '', budget: '', message: '' });
       setErrors({});
