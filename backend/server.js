@@ -26,6 +26,13 @@ mongoose.connect(process.env.MONGO_URI || process.env.MONGODB_URI)
 
 // Routes
 
+app.get("/", (req, res) => {
+  res.json({
+    success: true,
+    message: "LeadDesk API is running"
+  });
+});
+
 // Public: Submit Lead
 app.post('/api/leads', async (req, res) => {
   try {
