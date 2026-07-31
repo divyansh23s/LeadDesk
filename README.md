@@ -49,4 +49,3 @@ The admin portal is secured using **JSON Web Tokens (JWT)** and **bcrypt**.
 
 
 ---
-Built for Digital Heroes Training Task - [digitalheroesco.com](https://digitalheroesco.com)
